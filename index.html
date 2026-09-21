@@ -25,6 +25,7 @@ img.doc-img{border-radius:12px;border:1px solid rgba(255,255,255,0.12);box-shado
 img.doc-img:hover{transform:scale(1.01)}
 .step-num{background:linear-gradient(135deg,#8b7bff,#5b3fd6);color:white;width:28px;height:28px;display:grid;place-items:center;border-radius:8px;font-weight:800;font-size:13px}
 .voice-card{background:linear-gradient(135deg,rgba(139,123,255,0.12),rgba(242,121,107,0.08));border:1px solid rgba(139,123,255,0.2)}
+  audio{display:none;}
 </style>
 </head>
 <body class="font-sans antialiased">
@@ -32,8 +33,9 @@ img.doc-img:hover{transform:scale(1.01)}
   <div class="mx-auto max-w-[1150px] px-6 py-4 flex items-center justify-between">
     <div class="flex items-center gap-3">
       <span class="grid size-8 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-600 text-white font-black">S</span>
-      <strong class="text-white text-[16px]">StoryForge</strong><span class="text-[11px] text-[#7d8db0] border border-white/10 rounded-full px-2 py-0.5">DOCS LIVE v4 • Confidential</span>
+      <strong class="text-white text-[16px]">StoryForge</strong>
     </div>
+    <br />
     <div class="flex items-center gap-2 text-[11px]">
       <a href="#video" class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-brand-600 to-fuchsia-600 text-white font-bold animate-pulse">▶ Energetic Video</a>
       <a href="#blogger" class="px-3 py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.1] text-slate-300">Blogger</a>
@@ -83,21 +85,8 @@ img.doc-img:hover{transform:scale(1.01)}
           <span class="text-[11px] text-[#8fa0bf] py-2">Fast slideshow: landing → dashboard → builder archive → canvas → scraper → settings → payment → super admin → archive → history with voiceover!</span>
         </div>
       </div>
-      <div class="card p-4">
-        <h3 class="text-white font-bold text-[13px] mb-3">🎙️ Voice Clips — Per Page (Energetic)</h3>
-        <div class="space-y-2 max-h-[380px] overflow-y-auto pr-1">
-          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">01 Intro — StoryForge Powerhouse</strong><span class="text-[9px] text-brand-300">17s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-01-intro.mp3" type="audio/mpeg"></audio></div>
-          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">02 Dashboard — Command Center</strong><span class="text-[9px] text-brand-300">12s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-02-dashboard.mp3" type="audio/mpeg"></audio></div>
-          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">03 Builder — Drag & Drop Magic</strong><span class="text-[9px] text-brand-300">18s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-03-builder.mp3" type="audio/mpeg"></audio></div>
-          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">04 Scraper — Anti 403</strong><span class="text-[9px] text-brand-300">15s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-04-scraper.mp3" type="audio/mpeg"></audio></div>
-          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">05 Settings — Blogger + WP</strong><span class="text-[9px] text-brand-300">22s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-05-settings.mp3" type="audio/mpeg"></audio></div>
-          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">06 Payment — QR UPI Flow</strong><span class="text-[9px] text-brand-300">15s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-06-payment.mp3" type="audio/mpeg"></audio></div>
-          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">07 Super Admin — Confidential</strong><span class="text-[9px] text-fuchsia-300">13s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-07-superadmin.mp3" type="audio/mpeg"></audio></div>
-          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">08 AI Writer — Silver Too</strong><span class="text-[9px] text-mint">16s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-08-ai.mp3" type="audio/mpeg"></audio></div>
-        </div>
-        <div class="mt-3 p-2 rounded-lg bg-amber-400/10 border border-amber-400/20 text-[10px] text-amber-200">All voiceovers generated with energetic advertising voice (masculine, fast-paced). Full combined: <a href="assets/full-voiceover.mp3" class="underline">full-voiceover.mp3</a></div>
-      </div>
-    </div>
+      
+        
 
     <div class="mt-6 grid gap-6 lg:grid-cols-2">
       <div class="card p-4">
