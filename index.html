@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StoryForge Docs — Live Screenshots + Energetic Video Tour</title>
+<meta name="description" content="Complete StoryForge docs with live localhost screenshots, energetic voiceover video, Blogger + WordPress setup">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Plus Jakarta Sans','sans-serif'], mono: ['JetBrains Mono','monospace'] },
+      colors: { canvas: '#070b18', panel: '#0d1426', brand: { 300:'#c4b8ff', 400:'#a795ff', 500:'#8b7bff', 600:'#6d4dfa' }, mint:'#34d399', coral:'#f2796b' }
+    }
+  }
+}
+</script>
+<style>
+body{background:#070b18;color:#cbd5e1}
+.card{background:#0d1426;border:1px solid rgba(255,255,255,0.08);border-radius:16px}
+.kicker{font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:#8b7bff}
+img.doc-img{border-radius:12px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 10px 40px rgba(0,0,0,0.5);transition:transform .3s}
+img.doc-img:hover{transform:scale(1.01)}
+.step-num{background:linear-gradient(135deg,#8b7bff,#5b3fd6);color:white;width:28px;height:28px;display:grid;place-items:center;border-radius:8px;font-weight:800;font-size:13px}
+.voice-card{background:linear-gradient(135deg,rgba(139,123,255,0.12),rgba(242,121,107,0.08));border:1px solid rgba(139,123,255,0.2)}
+</style>
+</head>
+<body class="font-sans antialiased">
+<header class="sticky top-0 z-30 backdrop-blur-xl bg-[#070b18]/90 border-b border-white/[0.07]">
+  <div class="mx-auto max-w-[1150px] px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="grid size-8 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-600 text-white font-black">S</span>
+      <strong class="text-white text-[16px]">StoryForge</strong><span class="text-[11px] text-[#7d8db0] border border-white/10 rounded-full px-2 py-0.5">DOCS LIVE v4 • Confidential</span>
+    </div>
+    <div class="flex items-center gap-2 text-[11px]">
+      <a href="#video" class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-brand-600 to-fuchsia-600 text-white font-bold animate-pulse">▶ Energetic Video</a>
+      <a href="#blogger" class="px-3 py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.1] text-slate-300">Blogger</a>
+      <a href="#wordpress" class="px-3 py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.1] text-slate-300">WordPress</a>
+      <a href="#payment" class="px-3 py-1.5 rounded-lg bg-amber-400/15 text-amber-300 border border-amber-400/20">Payment</a>
+    </div>
+  </div>
+</header>
+
+<main class="mx-auto max-w-[1150px] px-6 py-10">
+  <!-- HERO -->
+  <section class="mb-12">
+    <p class="kicker mb-2">🔴 LIVE LOCALHOST SCREENSHOTS • PHP 8.4 • Playwright Chromium</p>
+    <h1 class="text-[32px] md:text-[44px] font-extrabold leading-[0.9] tracking-tight text-white">Complete Guide<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-coral">Live Screenshots + Voiceover</span></h1>
+    <p class="mt-4 max-w-2xl text-[14px] leading-relaxed text-[#8fa0bf]">All screenshots below are <b class="text-white">REAL localhost:8000</b> captures via Playwright — not mockups. PHP server started, super admin logged in, every page visited. Super admin credentials are <b class="text-fuchsia-300">confidential</b> and never exposed in docs.</p>
+    <div class="mt-6 grid gap-3 sm:grid-cols-3">
+      <div class="card p-4"><strong class="block text-white text-[13px]">Requirement</strong><small class="text-[11px] text-[#7d8db0]">JetTheme Blogger template <a href="https://wbthemes.com/product/jettheme/" target="_blank" class="text-brand-300 underline">wbthemes.com/product/jettheme/</a> for Blogger (WordPress free)</small></div>
+      <div class="card p-4 border border-fuchsia-500/20"><strong class="block text-fuchsia-300 text-[13px]">Super Admin (Confidential)</strong><small class="text-[11px] text-[#7d8db0]">dhanjeerider@gmail.com — owner only. Password is secret, not in docs. Manages roles, payments, QR/UPI.</small></div>
+      <div class="card p-4"><strong class="block text-white text-[13px]">Privacy Note</strong><small class="text-[11px] text-[#7d8db0]">App passwords, site URLs, blogs, OAuth tokens, story logs save in your browser localStorage — we have no access.</small></div>
+    </div>
+    <div class="mt-8 grid gap-4 md:grid-cols-2">
+      <img src="assets/live/01-landing-hero.png" alt="Landing Live" class="doc-img w-full">
+      <img src="assets/live/02-dashboard-overview.png" alt="Dashboard Live" class="doc-img w-full">
+    </div>
+    <p class="mt-2 text-[10px] text-[#5d6d90]">Left: Landing page localhost:8000 • Right: Dashboard overview after super admin login (live capture)</p>
+  </section>
+
+  <!-- VIDEO ENERGETIC -->
+  <section id="video" class="mb-14">
+    <div class="flex items-center gap-3 mb-4"><span class="step-num">🔥</span><h2 class="text-[24px] font-bold text-white">Energetic Video Walkthrough — Fast + Voiceover</h2><span class="ml-2 px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 text-black text-[10px] font-black">NEW LIVE + VOICE</span></div>
+    
+    <div class="grid gap-6 lg:grid-cols-3">
+      <div class="lg:col-span-2 card p-4">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-white font-bold text-[14px]">🎬 Main Tour — Slideshow + Energetic Voiceover (2:26)</h3>
+          <span class="text-[10px] px-2 py-0.5 rounded bg-mint/15 text-mint border border-mint/20">2.5 MB • 146 sec • 1280x720</span>
+        </div>
+        <div class="relative rounded-xl overflow-hidden border border-white/10 bg-black aspect-video">
+          <video id="mainVideo" controls poster="assets/live/02-dashboard-overview.png" class="w-full h-full bg-black" preload="metadata">
+            <source src="assets/final-walkthrough-energetic.mp4" type="video/mp4">
+            <source src="assets/walkthrough.webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <button onclick="document.getElementById('mainVideo').play()" class="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-600 to-fuchsia-600 text-white text-[12px] font-bold">▶ Play Energetic Tour</button>
+          <a href="assets/final-walkthrough-energetic.mp4" download class="px-3 py-2 rounded-xl bg-white/10 text-slate-300 text-[11px]">⬇ Download MP4</a>
+          <span class="text-[11px] text-[#8fa0bf] py-2">Fast slideshow: landing → dashboard → builder archive → canvas → scraper → settings → payment → super admin → archive → history with voiceover!</span>
+        </div>
+      </div>
+      <div class="card p-4">
+        <h3 class="text-white font-bold text-[13px] mb-3">🎙️ Voice Clips — Per Page (Energetic)</h3>
+        <div class="space-y-2 max-h-[380px] overflow-y-auto pr-1">
+          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">01 Intro — StoryForge Powerhouse</strong><span class="text-[9px] text-brand-300">17s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-01-intro.mp3" type="audio/mpeg"></audio></div>
+          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">02 Dashboard — Command Center</strong><span class="text-[9px] text-brand-300">12s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-02-dashboard.mp3" type="audio/mpeg"></audio></div>
+          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">03 Builder — Drag & Drop Magic</strong><span class="text-[9px] text-brand-300">18s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-03-builder.mp3" type="audio/mpeg"></audio></div>
+          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">04 Scraper — Anti 403</strong><span class="text-[9px] text-brand-300">15s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-04-scraper.mp3" type="audio/mpeg"></audio></div>
+          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">05 Settings — Blogger + WP</strong><span class="text-[9px] text-brand-300">22s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-05-settings.mp3" type="audio/mpeg"></audio></div>
+          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">06 Payment — QR UPI Flow</strong><span class="text-[9px] text-brand-300">15s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-06-payment.mp3" type="audio/mpeg"></audio></div>
+          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">07 Super Admin — Confidential</strong><span class="text-[9px] text-fuchsia-300">13s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-07-superadmin.mp3" type="audio/mpeg"></audio></div>
+          <div class="voice-card rounded-xl p-3"><div class="flex items-center justify-between"><strong class="text-white text-[11px]">08 AI Writer — Silver Too</strong><span class="text-[9px] text-mint">16s</span></div><audio controls class="w-full mt-2 h-8"><source src="assets/voice-08-ai.mp3" type="audio/mpeg"></audio></div>
+        </div>
+        <div class="mt-3 p-2 rounded-lg bg-amber-400/10 border border-amber-400/20 text-[10px] text-amber-200">All voiceovers generated with energetic advertising voice (masculine, fast-paced). Full combined: <a href="assets/full-voiceover.mp3" class="underline">full-voiceover.mp3</a></div>
+      </div>
+    </div>
+
+    <div class="mt-6 grid gap-6 lg:grid-cols-2">
+      <div class="card p-4">
+        <h3 class="text-white font-bold text-[13px] mb-2">📹 Live Screen Recording — Playwright Chromium (with voice)</h3>
+        <div class="relative rounded-xl overflow-hidden border border-white/10 bg-black aspect-video">
+          <video controls poster="assets/live/02-dashboard-overview.png" class="w-full h-full bg-black">
+            <source src="assets/final-live-with-voice.mp4" type="video/mp4">
+            <source src="assets/walkthrough-live.webm" type="video/webm">
+          </video>
+        </div>
+        <p class="mt-2 text-[11px] text-[#8fa0bf]">Real browser automation: login as super_admin → visit builder, scraper, archive, history, settings, payment, super-admin. Recorded at 1280x800, 1.5MB webm + voiceover muxed.</p>
+      </div>
+      <div class="card p-4">
+        <h3 class="text-white font-bold text-[13px] mb-2">📸 Live Screenshots Gallery — localhost:8000</h3>
+        <div class="grid grid-cols-2 gap-2">
+          <img src="assets/live/03-builder-archive.png" class="doc-img w-full aspect-video object-cover"><img src="assets/live/05-builder-canvas-edit.png" class="doc-img w-full aspect-video object-cover">
+          <img src="assets/live/06-scraper.png" class="doc-img w-full aspect-video object-cover"><img src="assets/live/09-settings-blogger-wp.png" class="doc-img w-full aspect-video object-cover">
+          <img src="assets/live/10-payment-qr-upi.png" class="doc-img w-full aspect-video object-cover"><img src="assets/live/11-super-admin-panel.png" class="doc-img w-full aspect-video object-cover">
+          <img src="assets/live/07-archive-2grid.png" class="doc-img w-full aspect-video object-cover"><img src="assets/live/08-history.png" class="doc-img w-full aspect-video object-cover">
+        </div>
+        <p class="mt-2 text-[10px] text-[#5d6d90]">All from live PHP 8.4 server at 127.0.0.1:8000 — no mocks. Check assets/live/ folder for 13 PNGs + videos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOGGER -->
+  <section id="blogger" class="mb-14">
+    <div class="flex items-center gap-3 mb-4"><span class="step-num">1</span><h2 class="text-[22px] font-bold text-white">Blogger Setup — OAuth Client ID</h2></div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Step 1: Enable Blogger API</h3>
+        <p class="text-[12px] text-[#8fa0bf] mt-1">Go to <a href="https://console.cloud.google.com/apis/dashboard" target="_blank" class="text-brand-300 underline">console.cloud.google.com/apis/dashboard</a> → Search Blogger API v3 → Enable.</p>
+        <img src="assets/03-blogger-api-enable.png" alt="Enable API" class="doc-img mt-3 w-full">
+        <div class="mt-4 rounded-xl bg-amber-400/10 border border-amber-400/20 p-3 text-[11px] text-amber-200">If you want Blogger, you need JetTheme: <a href="https://wbthemes.com/product/jettheme/" target="_blank" class="underline">Buy JetTheme</a> — AMP story support.</div>
+      </div>
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Step 2: Create Web OAuth Client</h3>
+        <ol class="mt-2 list-decimal list-inside text-[12px] text-[#8fa0bf] space-y-1.5">
+          <li>Credentials → Create Credentials → OAuth Client ID</li>
+          <li>Application type: <b class="text-white">Web application</b></li>
+          <li>Authorized JavaScript origins: <code class="mono bg-white/10 px-1.5 py-0.5 rounded text-brand-300">https://clonner.in</code> + your domain</li>
+          <li>Authorized redirect URIs: same origins</li>
+          <li>Copy Client ID: <code class="mono text-[11px]">...apps.googleusercontent.com</code></li>
+        </ol>
+        <img src="assets/02-blogger-oauth-console.png" alt="OAuth Console" class="doc-img mt-3 w-full">
+      </div>
+    </div>
+    <div class="card p-5 mt-6">
+      <h3 class="text-white font-bold text-[14px]">Step 3: Connect in StoryForge Settings (Live Screenshot)</h3>
+      <p class="text-[12px] text-[#8fa0bf] mt-1">Open <code class="mono bg-white/10 px-1.5 py-0.5 rounded">https://clonner.in/settings.php</code> or your domain /settings.php → Blogger connection → Paste Client ID → Connect Blogger → Google popup → Allow → Select blog → Save.</p>
+      <img src="assets/live/09-settings-blogger-wp.png" alt="Blogger Connect Live" class="doc-img mt-3 w-full">
+      <p class="text-[10px] text-[#5d6d90] mt-2">Live capture from localhost:8000/settings.php — shows Blogger + WordPress connection UI</p>
+    </div>
+  </section>
+
+  <!-- WORDPRESS -->
+  <section id="wordpress" class="mb-14">
+    <div class="flex items-center gap-3 mb-4"><span class="step-num">2</span><h2 class="text-[22px] font-bold text-white">WordPress Setup — Application Password</h2></div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Step 1: Generate App Password in WP</h3>
+        <p class="text-[12px] text-[#8fa0bf] mt-1">WP Admin → Users → Profile → Application Passwords → New Application Password Name: <code class="mono bg-white/10 px-1.5 rounded">123</code> → Generate → Copy.</p>
+        <img src="assets/05-wordpress-app-password.png" alt="WP App Password" class="doc-img mt-3 w-full">
+      </div>
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Step 2: Add in StoryForge (Live)</h3>
+        <p class="text-[12px] text-[#8fa0bf] mt-1">Settings → WordPress connection → Enter WP Site URL, Username, App Password → Save. Green Connected badge = ready.</p>
+        <img src="assets/live/13-settings-full.png" alt="WP Settings Live" class="doc-img mt-3 w-full">
+      </div>
+    </div>
+    <div class="card p-5 mt-6 border border-mint/20 bg-mint/[0.04]">
+      <h3 class="text-mint font-bold text-[13px]">WordPress Text Top Fix (Latest v3)</h3>
+      <p class="text-[12px] text-[#8fa0bf] mt-1">Fixed by <code class="mono">template="fill"</code> + absolute bottom <code class="mono">left:32px;right:32px;bottom:44px</code>. Re-publish old stories.</p>
+    </div>
+  </section>
+
+  <!-- SUPER ADMIN -->
+  <section id="superadmin" class="mb-14">
+    <div class="flex items-center gap-3 mb-4"><span class="step-num">3</span><h2 class="text-[22px] font-bold text-white">Super Admin — Roles & Access Control (Confidential)</h2><span class="px-2 py-0.5 rounded-full bg-fuchsia-500/15 text-fuchsia-300 border border-fuchsia-500/20 text-[10px]">CONFIDENTIAL — NO PASSWORD IN DOCS</span></div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="card p-5 border border-fuchsia-500/20">
+        <h3 class="text-white font-bold text-[14px]">Login as Super Admin (Live Screenshot)</h3>
+        <p class="text-[12px] text-[#8fa0bf] mt-1">Email: <code class="mono bg-fuchsia-500/15 text-fuchsia-300 px-2 py-1 rounded">dhanjeerider@gmail.com</code> <span class="text-[11px] text-fuchsia-300">(password confidential — owner only, not in docs)</span></p>
+        <img src="assets/live/11-super-admin-panel.png" alt="Super Admin Login Live" class="doc-img mt-3 w-full">
+        <p class="mt-3 text-[11px] text-[#7d8db0]">Live capture from localhost:8000/super-admin.php — after login, sidebar shows Super Admin link. Only this role can see it.</p>
+      </div>
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Manage Users & Permissions</h3>
+        <ul class="mt-2 text-[12px] text-[#8fa0bf] space-y-1.5 list-disc list-inside">
+          <li><b class="text-white">Silver (default):</b> Dashboard, Builder, Archive, Editor, History, Payment — AI allowed</li>
+          <li><b class="text-amber-300">Platinum:</b> + Scraper (sitemap/discover/bulk) + AI with own Groq key</li>
+          <li><b class="text-fuchsia-300">Super Admin:</b> All pages + user management + payment approval + QR/UPI settings</li>
+        </ul>
+        <img src="assets/live/12-admin-panel.png" alt="Admin Panel Live" class="doc-img mt-3 w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENT -->
+  <section id="payment" class="mb-14">
+    <div class="flex items-center gap-3 mb-4"><span class="step-num">4</span><h2 class="text-[22px] font-bold text-white">Payment Page — QR / UPI & Approval Flow (Live)</h2></div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Super Admin: Set QR & UPI (Live)</h3>
+        <p class="text-[12px] text-[#8fa0bf] mt-1">Payment page → Admin section → QR Image URL (freeimage.host) + UPI ID + Amount → Save. Stored in super admin settings, visible to all users.</p>
+        <img src="assets/live/10-payment-qr-upi.png" alt="Payment QR Live" class="doc-img mt-3 w-full">
+      </div>
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">User: Pay & Submit Proof</h3>
+        <ol class="mt-2 list-decimal list-inside text-[12px] text-[#8fa0bf] space-y-1.5">
+          <li>Open Payment from sidebar (UPGRADE tag)</li>
+          <li>Scan QR or pay to UPI ID</li>
+          <li>Copy UTR / Transaction ID</li>
+          <li>Upload screenshot (freeimage.host)</li>
+          <li>Enter UTR + Screenshot URL → Submit Proof</li>
+          <li>Wait for admin approval — status pending/approved/rejected</li>
+        </ol>
+        <div class="mt-3 rounded-xl bg-mint/10 border border-mint/20 p-3 text-[11px] text-mint">On Approve, user auto becomes Platinum — scraper + AI unlocked instantly.</div>
+        <audio controls class="w-full mt-3 h-8"><source src="assets/voice-06-payment.mp3" type="audio/mpeg"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILDER -->
+  <section id="builder" class="mb-14">
+    <div class="flex items-center gap-3 mb-4"><span class="step-num">5</span><h2 class="text-[22px] font-bold text-white">Story Builder — Drag & Drop Canvas (Live)</h2></div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Archive First — 2-Grid Mobile (Live)</h3>
+        <p class="text-[12px] text-[#8fa0bf] mt-1">Builder now lands on archive first (2-grid on mobile), not first story. Click Open Builder to go to canvas. Back to archive button returns.</p>
+        <img src="assets/live/03-builder-archive.png" alt="Archive 2 Grid Live" class="doc-img mt-3 w-full">
+      </div>
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Canvas & Layers (Live)</h3>
+        <p class="text-[12px] text-[#8fa0bf] mt-1">405×718 canvas, drag to move, corner handle to resize, arrow keys nudge. Right panel: Element tab icons+text — Duplicate, Layer Up, Delete. Images tab: Unsplash/Upload/URL.</p>
+        <img src="assets/live/05-builder-canvas-edit.png" alt="Builder Canvas Live" class="doc-img mt-3 w-full">
+        <audio controls class="w-full mt-2 h-8"><source src="assets/voice-03-builder.mp3" type="audio/mpeg"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRAPER & AI -->
+  <section id="scraper" class="mb-14">
+    <div class="flex items-center gap-3 mb-4"><span class="step-num">6</span><h2 class="text-[22px] font-bold text-white">Scraper & AI Writer (Live)</h2></div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">Scraper — Anti 403 (Live Screenshot)</h3>
+        <img src="assets/live/06-scraper.png" alt="Scraper Live" class="doc-img w-full">
+        <ul class="mt-3 text-[12px] text-[#8fa0bf] list-disc list-inside space-y-1">
+          <li>2 stories/sec (500ms gap) + UA rotation every 50 URLs</li>
+          <li>403 detected → pause 30-45s + rotate UA + retry 3 times</li>
+          <li>Sitemap discovery: nested sitemaps supported</li>
+        </ul>
+        <audio controls class="w-full mt-2 h-8"><source src="assets/voice-04-scraper.mp3" type="audio/mpeg"></audio>
+      </div>
+      <div class="card p-5">
+        <h3 class="text-white font-bold text-[14px]">AI Writer — Silver Also Allowed</h3>
+        <p class="text-[12px] text-[#8fa0bf] mt-1"><b class="text-white">Groq:</b> <a href="https://console.groq.com/keys" target="_blank" class="text-brand-300 underline">console.groq.com/keys</a> — free. <b class="text-white">Unsplash:</b> <a href="https://unsplash.com/developers" target="_blank" class="text-brand-300 underline">unsplash.com/developers</a>. Silver gets AI now, Platinum gets scraper+AI.</p>
+        <div class="mt-3 grid grid-cols-2 gap-2">
+          <img src="assets/live/07-archive-2grid.png" class="doc-img w-full"><img src="assets/live/08-history.png" class="doc-img w-full">
+        </div>
+        <audio controls class="w-full mt-3 h-8"><source src="assets/voice-08-ai.mp3" type="audio/mpeg"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-10 border-t border-white/[0.07] pt-6 flex flex-wrap items-center justify-between gap-2 text-[11px] text-[#5d6d90]">
+    <span>StoryForge Docs LIVE • PHP 8.4 • Playwright Chromium • Super Admin dhanjeerider@gmail.com (confidential) • No password in docs</span>
+    <span class="flex items-center gap-2"><span class="px-2 py-0.5 rounded bg-mint/10 text-mint border border-mint/20">13 Live PNGs</span><span class="px-2 py-0.5 rounded bg-brand-500/15 text-brand-300 border border-brand-500/20">2 Energetic Videos</span><span class="px-2 py-0.5 rounded bg-amber-400/10 text-amber-300 border border-amber-400/20">8 Voice Clips</span></span>
+  </footer>
+</main>
+</body>
+</html>
